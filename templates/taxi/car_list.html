@@ -9,7 +9,7 @@
       </tr>
       {% for car in car_list %}
         <tr>
-          <th><a href="{% url "taxi:car-detail" car.id %}">{{ car.id }}</a></th>
+          <th><a href="{% url "taxi:car-detail" pk=car.id %}">{{ car.id }}</a></th>
           <th>{{ car.model }}</th>
         </tr>
       {% endfor %}
